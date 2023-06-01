@@ -60,3 +60,7 @@ legend {
   color: white;
   padding: 0.2rem;
 }
+
+form {
+  border-radius: 50%;
+}
