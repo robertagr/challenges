@@ -51,7 +51,7 @@ for (const key in nav) {
   const listItem = document.createElement("li");
   const anchorTag = document.createElement("a");
 
-  listItem.textContent = nav[key].text;
+  anchorTag.textContent = nav[key].text;
   anchorTag.href = nav[key].href;
 
   ul.append(listItem);
