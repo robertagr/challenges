@@ -9,7 +9,7 @@ export default function App() {
     console.log("button");
   };
   const buttonHandlerMinus = () => {
-    setCount(count - 1);
+    setCount(Math.max(count - 1));
   };
 
   return (
