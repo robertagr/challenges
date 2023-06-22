@@ -25,7 +25,7 @@ export default function PokemonList() {
   };
 
   const prevPage = () => {
-    if (page >= 20);
+    setPage(page - 20);
   };
 
   return (
