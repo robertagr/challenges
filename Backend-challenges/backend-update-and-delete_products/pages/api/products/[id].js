@@ -20,4 +20,10 @@ export default async function handler(request, response) {
     await Product.findByIdAndUpdate(id, updatedProduct);
     response.status(200).json({ status: "Product successfully updated." });
   }
+
+  if (request.method === "DELETE") {
+    const updatedProduct = request.body;
+    await Product.findByIdAndUpdate(id);
+    response.status(200).json({ status: "Product successfully deleted." });
+  }
 }
